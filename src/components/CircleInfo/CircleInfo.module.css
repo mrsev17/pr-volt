@@ -1,0 +1,18 @@
+.circleInfo {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--regular-radius);
+  background-color: #a4ffaf;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.circleInfo span {
+  font-size: 16px;
+  display: block;
+  color: black;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.todoItem {
+  background-color: #24232c;
+  padding: 12px;
+  border-radius: var(--regular-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  animation: show 2s forwards;
+  z-index: -1;
+}
+
+.todoStatus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.completeTxt {
+  color: var(--accent-green);
+}
+.notCompleteTxt {
+  color: black
+}
+.todoTitle {
+  display: flex;
+  gap: 6px;
+}
+.todoTitle > span {
+  display: block;
+  color: var(--accent-green);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --accent-bg-color: #18171f;
+  --accent-green: #a4ffaf;
+  --accent-white: #ffff;
+
+  --regular-radius: 8px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

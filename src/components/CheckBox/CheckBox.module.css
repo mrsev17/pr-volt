@@ -1,0 +1,53 @@
+
+.checkboxWrapper  label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: row-reverse;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;  
+}
+
+.checkboxWrapper input[type="checkbox"]:checked {
+  background-color: var(--accent-green);
+  border: 2px solid var(--accent-green);
+  position: relative;
+}
+
+.checkboxWrapper input[type="checkbox"]:hover {
+  border: 2px solid var(--accent-green);
+}
+
+.checkboxWrapper input[type="checkbox"]:checked::before {
+  content: url("../../assets/images/checkbox-icon.svg");
+  color: black;
+  font-size: 1.5em;
+  position: absolute;
+  right: 1px;
+  top: -8px;
+}
+
+@media (max-width: 400px) {
+    .checkboxWrapper {
+        span {
+            font-size: 16px;
+        }
+    }
+}
