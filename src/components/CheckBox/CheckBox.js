@@ -11,6 +11,7 @@ export const CheckBox = ({ status, id }) => {
             className={status ? 'checked' : ''}
             type='checkbox'
             checked={status}
+            readOnly
             onChange={() => dispatch(setToggleStatus(id))}
         />
         <span> {status} </span>

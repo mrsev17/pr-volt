@@ -7,7 +7,6 @@
   justify-content: space-between;
   gap: 20px;
   animation: show 2s forwards;
-  z-index: -1;
 }
 
 .todoStatus {
@@ -22,6 +21,7 @@
   color: black
 }
 .todoTitle {
+  cursor: pointer;
   display: flex;
   gap: 6px;
 }
