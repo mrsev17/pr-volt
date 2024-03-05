@@ -1,7 +1,7 @@
 module.exports = {
-  'extends': ['@wemake-services/eslint-config-javascript'],
-  'rules': {
-    'unicorn/filename-case': 'off',
-    'semi': ['error', 'never'],
+  extends: ["@wemake-services/javascript"],
+  rules: {
+    "unicorn/filename-case": "off",
+    semi: ["error", "never"],
   },
-}
+};
